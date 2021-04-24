@@ -1,0 +1,177 @@
+/************************
+Variables
+************************/
+:root{
+    --primary-color: #FFFFFF;
+    --secundary-color: #333333;
+    --terteary-color: #1DB947;
+    --quaternary-color: #E9EEF0;
+    --quinary-color: #707070;
+    --sixteary-color:#509BF5;
+    --black-color: #000000;
+
+    --primary-font: "Barlow", sans-serif;
+}
+
+/************************
+Generals
+************************/
+
+/************************
+Typography
+************************/
+html{
+    font-size: 18px;
+}
+body{
+    font-family: var(--primary-font);
+    line-height: 23px;
+    font-size: inherit;
+    font-weight: 400;
+}
+h1{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 80px;
+}
+h2{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+}
+h1,h2{
+    margin: 0;
+}
+p{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+figure{
+    margin: 0;
+}
+img{
+    display: block;
+}
+/************************
+Components
+************************/
+/* Boton */
+.btn{
+    background-color: var(--terteary-color);
+    display: inline-block;
+    width: 202px;
+    height: 45px;
+    border-color: transparent;
+    border-radius: 20px;
+    color: var(--primary-color);
+    line-height: 40px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+/* Title */
+.title{
+    text-align: center;
+    padding-bottom: 55px;
+    padding-top: 61px;
+}
+figcaption{
+    text-align: center;
+}
+/************************
+Style
+************************/
+/* Container 1 */
+.container{
+    width: 1200px;
+    padding: 0px 10px;
+    margin: 0 auto;
+    outline: 1px dashed cadetblue
+}
+/* Hero Banner */
+.main-h-hero-banner{
+    background-image: url("../img/hero-banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.h-hero-banner{
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+/* Banner */
+.banner-content{
+    text-align: center;
+}
+
+/* benefit */
+.main-home-benefit{
+    background-color: var(--quaternary-color);
+}
+.home-benefit{
+    display: flex;
+    padding-bottom: 64px;
+}
+.home-benefit figure:not(:last-child){
+    margin-right: 50px;
+}
+/* download */
+.main-home-download{
+    background-color: var(--primary-color);
+}
+.home-download{
+    padding-bottom: 61px;
+}
+.home-download p{
+    text-align: center;
+    color: var(--secundary-color);
+    padding-bottom: 31px;
+}
+.home-download ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0 344.5px;
+}
+.home-download li:not(:last-child){
+    padding-right: 35px;
+}
+/* footer */
+.main-home-footer{
+    background-color: var(--quaternary-color);
+}
+.home-footer{
+    padding: 43px 0;
+}
+.home-footer ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+.home-footer li:not(:last-child){
+    padding-right: 20px;
+}
+.home-footer i{
+    color: var(--primary-color);
+    font-size: 45px;
+    border-radius: 50%;
+    background-color: var(--black-color);
+    padding: 13px;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 50px;
+}
+.home-footer p{
+    color: var(--quinary-color);
+    text-align: center;
+    font-weight: 400;
+}
+.home-footer p a{
+    color:var(--sixteary-color);
+    text-decoration: underline;
+    font-weight: 700;
+}
